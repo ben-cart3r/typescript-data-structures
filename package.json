@@ -1,0 +1,36 @@
+{
+  "name": "typescript-data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "eslint . --cache --max-warnings 0",
+    "lint:fix": "eslint . --cache --max-warnings 0 --fix",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-cart3r/typescript-data-structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ben-cart3r/typescript-data-structures/issues"
+  },
+  "homepage": "https://github.com/ben-cart3r/typescript-data-structures#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  }
+}

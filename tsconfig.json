@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "include": ["src/**/*"],
+    "compilerOptions": {
+        "allowUnreachableCode": false,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "useUnknownInCatchVariables": true,
+        "outDir": "dist",
+        "declaration": true
+    }
+}
