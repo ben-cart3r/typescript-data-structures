@@ -90,9 +90,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://npm.pkg.github.com'
+          scope: '@ben-cart3r'
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Build
+        run: npm run build
       
       - run: npm publish
         env:
