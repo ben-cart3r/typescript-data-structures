@@ -1,9 +1,9 @@
 {
   "name": "@ben-cart3r/typescript-data-structures",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "./dist/main.js",
-  "types": "./dist/main.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
