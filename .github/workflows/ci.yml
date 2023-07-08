@@ -89,11 +89,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: https://npm.pkg.github.com
           scope: '@ben-cart3r'
-
-      - name: Verify .npmrc is created
-        run: ls -lah
 
       - name: Install dependencies
         run: npm ci
