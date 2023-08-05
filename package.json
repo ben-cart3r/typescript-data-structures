@@ -9,7 +9,7 @@
     "build:watch": "tsc -w",
     "lint": "eslint . --cache --max-warnings 0",
     "lint:fix": "eslint . --cache --max-warnings 0 --fix",
-    "test": "vitest run",
+    "test": "vitest run --coverage",
     "test:watch": "vitest watch"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "@tsconfig/recommended": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
+    "@vitest/coverage-v8": "^0.34.1",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
