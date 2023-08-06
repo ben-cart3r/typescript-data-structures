@@ -12,6 +12,10 @@ export default class LinkedList<T> implements Iterable<T> {
     return this.insertAfter(this.tail(), value);
   }
 
+  clear(): void {
+    this._head = undefined;
+  }
+
   empty(): boolean {
     return this._head == undefined;
   }

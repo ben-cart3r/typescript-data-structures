@@ -87,4 +87,13 @@ describe("LinkedList", () => {
 
     expect([...list]).toEqual([2, 1]);
   });
+
+  it("should be possible to remove all nodes from the list", () => {
+    const list = new LinkedList<number>();
+
+    list.insert(1);
+    list.clear();
+
+    expect(list.empty()).toBeTruthy();
+  });
 });
