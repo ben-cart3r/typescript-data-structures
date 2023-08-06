@@ -29,7 +29,7 @@ Here is a brief overview of the steps:
     echo //npm.pkg.github.com/:_authToken=${PAT} >> ~/.npmrc
     ```
 
-- Create an npmrc file in the repository, specifying the npm repsitory to use for the `@ben-cart3r` namespace
+- Create an npmrc file in the repository, specifying the npm registry to use for the `@ben-cart3r` namespace
 
     ```shell
     echo @ben-cart3r:registry=https://npm.pkg.github.com/ >> .npmrc
