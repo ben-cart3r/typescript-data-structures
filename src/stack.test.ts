@@ -76,4 +76,12 @@ describe("Stack", () => {
 
     expect(inspect(stack)).toEqual("[ 2, 1 ]");
   });
+
+  describe("fromArray", () => {
+    it("should create a stack from an array", () => {
+      const stack = Stack.fromArray([1, 2, 3]);
+
+      expect([...stack]).toEqual([3, 2, 1]);
+    });
+  });
 });

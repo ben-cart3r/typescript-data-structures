@@ -76,4 +76,12 @@ describe("Queue", () => {
 
     expect(inspect(queue)).toEqual("[ 1, 2 ]");
   });
+
+  describe("fromArray", () => {
+    it("should create a queue from an array", () => {
+      const queue = Queue.fromArray([1, 2, 3]);
+
+      expect([...queue]).toEqual([1, 2, 3]);
+    });
+  });
 });

@@ -50,4 +50,14 @@ export default class Stack<T> implements Iterable<T> {
   [inspect]() {
     return [...this];
   }
+
+  static fromArray<T>(items: Array<T>): Stack<T> {
+    const stack = new Stack<T>();
+
+    for (const item of items) {
+      stack.push(item);
+    }
+
+    return stack;
+  }
 }

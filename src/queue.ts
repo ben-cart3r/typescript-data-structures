@@ -54,4 +54,14 @@ export default class Queue<T> implements Iterable<T> {
   [inspect]() {
     return [...this];
   }
+
+  static fromArray<T>(items: Array<T>): Queue<T> {
+    const queue = new Queue<T>();
+
+    for (const item of items) {
+      queue.enqueue(item);
+    }
+
+    return queue;
+  }
 }
